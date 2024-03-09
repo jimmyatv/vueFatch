@@ -1,17 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <VueNavbar />
+  <VuePhotos />
+  <VueComments />
+  <VueFetch />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import VueComments from "./components/VueComments.vue";
+import VueFetch from "./components/VueFetch.vue";
+import VuePhotos from "./components/VuePhotos.vue";
+import VueNavbar from "./components/VueNavbar.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    VueNavbar,
+    VuePhotos,
+    VueComments,
+    VueFetch,
+  },
+};
 </script>
 
 <style>
@@ -19,7 +27,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
